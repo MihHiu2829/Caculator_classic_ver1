@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#5E2B27"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:padding="5dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/bg_border"
+        android:text="Máy tính cơ bản"
+        android:textColor="@color/white"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-light"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:id="@+id/edt_numA"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/bg_border"
+                android:layout_marginHorizontal="40dp"
+            android:hint="Nhập số thứ nhất"
+            android:inputType="numberDecimal"
+            android:textSize="20dp"
+            android:padding="20dp"
+            android:textColorHint="@color/white"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:id="@+id/edt_numB"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bg_border"
+                android:layout_marginHorizontal="40dp"
+            android:hint="Nhập số thứ hai"
+            android:inputType="numberDecimal"
+            android:textSize="20dp"
+            android:padding="20dp"
+            android:textColorHint="@color/white"
+            android:layout_height="wrap_content"/>
+        <TableRow android:layout_height="100dp"
+            android:padding="10dp"
+            android:gravity="center"
+            android:layout_width="match_parent">
+            <Button
+                android:layout_width="wrap_content"
+                android:id="@+id/bt_sum"
+                android:text="CỘNG "
+                android:layout_marginEnd="40dp"
+                android:backgroundTint="@color/red100"
+                android:layout_height="wrap_content"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:id="@+id/bt_sub"
+                android:text="TRỪ"
+                android:backgroundTint="@color/red100"
+                android:layout_height="wrap_content"/>
+        </TableRow>
+
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
